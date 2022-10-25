@@ -22,6 +22,12 @@
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "import/extensions": "off",
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": false
+      }
+    ],
     "react/jsx-filename-extension": [
       2,
       {
